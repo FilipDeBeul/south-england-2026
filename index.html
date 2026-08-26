@@ -1,77 +1,48 @@
-<!doctype html>
-<html lang="nl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang='nl'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
 <title>South England 2026</title>
 <style>
 body{margin:0;font-family:system-ui;background:#0f172a;color:#fff}
 header{padding:22px;background:linear-gradient(135deg,#1d4ed8,#0ea5e9)}
 main{max-width:760px;margin:auto;padding:14px}
 .card{background:#1e293b;border-radius:18px;padding:16px;margin:14px 0}
-button{width:100%;padding:14px;border:none;border-radius:12px;background:#2563eb;color:#fff;font-size:16px}
-summary{cursor:pointer;font-weight:bold;padding:8px 0}
-.badge{display:inline-block;background:#334155;padding:4px 10px;border-radius:999px;font-size:12px;margin-left:6px}
-a{color:#7dd3fc;text-decoration:none}
-ul{padding-left:20px}
-.today{border:2px solid #38bdf8}
+summary{cursor:pointer;font-size:18px;font-weight:700}
+.badge{display:inline-block;background:#334155;padding:4px 10px;border-radius:999px;font-size:12px}
+.action{background:#0b5cab;border-left:4px solid #7dd3fc}
+a{color:#7dd3fc}
+ul{padding-left:18px}
 small{color:#cbd5e1}
-</style>
-</head>
-<body>
-<header>
-<h1>🇬🇧 South England 2026</h1>
-<small>Filip & partner • 27 aug – 8 sep 2026</small>
-</header>
+</style></head><body>
+<header><h1>🇬🇧 South England 2026</h1><small>Roadbook v1.3 • Kent volledig</small></header>
 <main>
-<div class="card">
-<h2>Vandaag</h2>
-<button onclick="goToday()">Open planning van vandaag</button>
-<p id="todayText"></p>
-</div>
 
-<div class="card">
-<h2>Snelle acties</h2>
-<ul>
-<li><a href="https://www.routeyou.com/" target="_blank">🚲 RouteYou</a></li>
-<li><a href="https://www.english-heritage.org.uk/" target="_blank">🏰 English Heritage</a></li>
-<li><a href="https://maps.google.com/" target="_blank">📍 Google Maps</a></li>
-</ul>
-</div>
+<div class='card'><h2>27 aug – 30 aug</h2>
+<p><span class='badge'>Kent</span> Kingfisher Cottage • Ottinge</p></div>
 
-<div id="d27" class="card">
-<details open><summary>27 aug – Elham Walk <span class="badge">Kent</span></summary>
-<ul><li>Elham Walk (6 km)</li><li>The King's Arms</li></ul></details></div>
+<div class='card'><details open><summary>27 aug – Elham Walk</summary>
+<ul><li>Inchecken Kingfisher Cottage</li><li>16:00 Elham Walk (6 km)</li><li>18:00 The King's Arms</li></ul></details></div>
 
-<div id="d28" class="card">
-<details><summary>28 aug – Canterbury 🚲 <span class="badge">EH actief</span></summary>
-<ul><li>55 km • ±700 hm</li><li>Cathedral vóór 16u</li><li>St Augustine's Abbey</li><li>King's Mile</li></ul></details></div>
+<div class='card action'><h3>🌙 Morgen regelen</h3>
+<ul><li>🔋 E-bike batterijen opladen</li><li>📱 RouteYou-route offline opslaan</li><li>⛪ Cathedral vóór 16:00 plannen</li></ul></div>
 
-<div id="d29" class="card">
-<details><summary>29 aug – Dover Castle</summary>
-<ul><li>Dover Castle</li><li>White Cliffs</li><li>Deal</li></ul></details></div>
+<div class='card'><details><summary>28 aug – Canterbury 🚲</summary>
+<ul><li>09:00 vertrek Ottinge</li><li>10:00 koffie Elham</li><li>11:45 Whitefriars Cycle Hub</li><li>12:00 Cathedral (75–90 min)</li><li>13:30 Lunch King's Mile</li><li>14:30 St Augustine's Abbey (EH)</li><li>15:15 Westgate Gardens</li><li>17:30 terugrit</li></ul>
+<p><b>Stadswandeling (2,5 km):</b> Mercery Lane → Buttermarket → Cathedral → King's School → Westgate → Westgate Gardens → Blackfriars → King's Mile.</p>
+<p><a href='https://www.routeyou.com/'>🚲 RouteYou openen</a></p></details></div>
 
-<div id="d30" class="card">
-<details><summary>30 aug – Leeds Castle</summary>
-<ul><li>Richborough Roman Fort (optioneel)</li><li>Leeds Castle</li></ul></details></div>
+<div class='card action'><h3>🌙 Morgen regelen</h3>
+<ul><li>🎟️ Dover Castle: reserveer 09:30–10:00 tijdslot</li><li>🪪 English Heritage Pass klaarzetten</li><li>🔋 Batterijen opladen</li></ul></div>
 
-<div class="card">
-<h2>Boekingen</h2>
-<ul>
-<li>✅ English Heritage Pass (28 aug–5 sep)</li>
-<li>⬜ Dover Castle tijdslot</li>
-<li>⬜ Stonehenge tijdslot</li>
-</ul>
-</div>
+<div class='card'><details><summary>29 aug – Dover Castle</summary>
+<ul><li>09:00 vertrek</li><li>10:00 Dover Castle (EH)</li><li>Secret Wartime Tunnels</li><li>Great Tower</li><li>14:30 White Cliffs</li><li>16:30 Deal</li><li>18:00 The Zetland Arms</li></ul></details></div>
 
-</main>
-<script>
-const map={"2026-08-27":"d27","2026-08-28":"d28","2026-08-29":"d29","2026-08-30":"d30"};
-const now=new Date();
-const iso=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0")+"-"+String(now.getDate()).padStart(2,"0");
-const t=document.getElementById("todayText");
-if(map[iso]){t.innerText="Vandaag staat een reisdag klaar.";document.getElementById(map[iso]).classList.add("today");}
-else{t.innerText="Buiten de reisperiode."; }
-function goToday(){ if(map[iso]) document.getElementById(map[iso]).scrollIntoView({behavior:"smooth"}); }
-</script>
-</body></html>
+<div class='card action'><h3>🌙 Morgen regelen</h3>
+<ul><li>🚗 Vertrek 10:00 richting Cotswolds</li><li>🏰 Leeds Castle tickets klaarzetten</li><li>📍 Richborough Roman Fort (optioneel)</li></ul></div>
+
+<div class='card'><details><summary>30 aug – Naar Chipping Norton</summary>
+<ul><li>10:00 vertrek Ottinge</li><li>11:00 Richborough Roman Fort (EH, optioneel)</li><li>13:00 Leeds Castle</li><li>16:00 rit naar Chipping Norton</li></ul></details></div>
+
+<div class='card'><h2>Boekingsstatus</h2>
+<ul><li>✅ English Heritage Pass (28 aug–5 sep)</li><li>⬜ Dover Castle tijdslot</li><li>⬜ Stonehenge tijdslot</li><li>⬜ Leeds Castle</li></ul></div>
+
+</main></body></html>
