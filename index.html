@@ -1,1 +1,77 @@
-<!doctype html><html lang='nl'><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>South England 2026</title><style>body{margin:0;font-family:system-ui;background:#0f172a;color:#fff}header{padding:24px;background:linear-gradient(135deg,#1d4ed8,#0ea5e9)}main{padding:16px;max-width:720px;margin:auto}.card{background:#1e293b;border-radius:18px;padding:16px;margin:16px 0}.badge{display:inline-block;background:#334155;padding:4px 10px;border-radius:999px;font-size:12px;margin-right:6px}ul{padding-left:20px}small{color:#cbd5e1}</style><header><h1>🇬🇧 South England 2026</h1><small>27 aug – 8 sep 2026 • Filip & partner</small></header><main><div class='card'><h2>Dashboard</h2><span class='badge'>13 dagen</span><span class='badge'>3 verblijven</span><span class='badge'>3 fietsdagen</span></div><div class='card'><h3>📍 Kent (27–30 aug)</h3><ul><li>27 aug – Elham Walk + The King's Arms</li><li>28 aug – 🚲 Canterbury (55 km · ±700 hm)</li><li>29 aug – Dover Castle + White Cliffs</li></ul></div><div class='card'><h3>🌳 Cotswolds</h3><ul><li>Leeds Castle onderweg</li><li>Blenheim Palace</li><li>Warwick Castle</li><li>🚲 Cotswolds-lus</li></ul></div><div class='card'><h3>🌊 Jurassic Coast</h3><ul><li>Stonehenge</li><li>Lulworth Cove</li><li>Corfe Castle</li><li>🚲 Dorset-lus</li></ul></div></main></html>
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>South England 2026</title>
+<style>
+body{margin:0;font-family:system-ui;background:#0f172a;color:#fff}
+header{padding:22px;background:linear-gradient(135deg,#1d4ed8,#0ea5e9)}
+main{max-width:760px;margin:auto;padding:14px}
+.card{background:#1e293b;border-radius:18px;padding:16px;margin:14px 0}
+button{width:100%;padding:14px;border:none;border-radius:12px;background:#2563eb;color:#fff;font-size:16px}
+summary{cursor:pointer;font-weight:bold;padding:8px 0}
+.badge{display:inline-block;background:#334155;padding:4px 10px;border-radius:999px;font-size:12px;margin-left:6px}
+a{color:#7dd3fc;text-decoration:none}
+ul{padding-left:20px}
+.today{border:2px solid #38bdf8}
+small{color:#cbd5e1}
+</style>
+</head>
+<body>
+<header>
+<h1>🇬🇧 South England 2026</h1>
+<small>Filip & partner • 27 aug – 8 sep 2026</small>
+</header>
+<main>
+<div class="card">
+<h2>Vandaag</h2>
+<button onclick="goToday()">Open planning van vandaag</button>
+<p id="todayText"></p>
+</div>
+
+<div class="card">
+<h2>Snelle acties</h2>
+<ul>
+<li><a href="https://www.routeyou.com/" target="_blank">🚲 RouteYou</a></li>
+<li><a href="https://www.english-heritage.org.uk/" target="_blank">🏰 English Heritage</a></li>
+<li><a href="https://maps.google.com/" target="_blank">📍 Google Maps</a></li>
+</ul>
+</div>
+
+<div id="d27" class="card">
+<details open><summary>27 aug – Elham Walk <span class="badge">Kent</span></summary>
+<ul><li>Elham Walk (6 km)</li><li>The King's Arms</li></ul></details></div>
+
+<div id="d28" class="card">
+<details><summary>28 aug – Canterbury 🚲 <span class="badge">EH actief</span></summary>
+<ul><li>55 km • ±700 hm</li><li>Cathedral vóór 16u</li><li>St Augustine's Abbey</li><li>King's Mile</li></ul></details></div>
+
+<div id="d29" class="card">
+<details><summary>29 aug – Dover Castle</summary>
+<ul><li>Dover Castle</li><li>White Cliffs</li><li>Deal</li></ul></details></div>
+
+<div id="d30" class="card">
+<details><summary>30 aug – Leeds Castle</summary>
+<ul><li>Richborough Roman Fort (optioneel)</li><li>Leeds Castle</li></ul></details></div>
+
+<div class="card">
+<h2>Boekingen</h2>
+<ul>
+<li>✅ English Heritage Pass (28 aug–5 sep)</li>
+<li>⬜ Dover Castle tijdslot</li>
+<li>⬜ Stonehenge tijdslot</li>
+</ul>
+</div>
+
+</main>
+<script>
+const map={"2026-08-27":"d27","2026-08-28":"d28","2026-08-29":"d29","2026-08-30":"d30"};
+const now=new Date();
+const iso=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0")+"-"+String(now.getDate()).padStart(2,"0");
+const t=document.getElementById("todayText");
+if(map[iso]){t.innerText="Vandaag staat een reisdag klaar.";document.getElementById(map[iso]).classList.add("today");}
+else{t.innerText="Buiten de reisperiode."; }
+function goToday(){ if(map[iso]) document.getElementById(map[iso]).scrollIntoView({behavior:"smooth"}); }
+</script>
+</body></html>
