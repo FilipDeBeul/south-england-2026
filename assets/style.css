@@ -1,11 +1,12 @@
 
-body{margin:0;font-family:system-ui;background:#07142b;color:#fff;line-height:1.5}
-header{padding:20px;background:linear-gradient(135deg,#1d4ed8,#0ea5e9);position:sticky;top:0}
-main{max-width:860px;margin:auto;padding:16px}
+body{margin:0;font-family:system-ui;background:#07142b;color:#fff;line-height:1.55}
+header{position:sticky;top:0;background:linear-gradient(135deg,#1d4ed8,#0ea5e9);padding:18px}
+main{max-width:900px;margin:auto;padding:16px}
 .day{background:#16233d;border-radius:22px;padding:18px;margin:18px 0}
-.item{background:#0f172a;border:1px solid #233453;border-radius:14px;padding:12px;margin:10px 0}
+.item{background:#0f172a;border:1px solid #22314f;border-radius:14px;padding:12px;margin:10px 0}
 summary{cursor:pointer;font-weight:700;font-size:17px}
-.badge{background:#334155;border-radius:999px;padding:3px 10px;font-size:12px}
-.top{background:#1d4ed8;border-radius:14px;padding:12px;margin-top:12px}
+.top{background:#1d4ed8;border-radius:14px;padding:12px;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.tile{background:#0f172a;border:1px solid #22314f;border-radius:12px;padding:12px;text-align:center}
 table{width:100%;border-collapse:collapse}td{padding:6px;border-bottom:1px solid #22314f}
 a{color:#8fd3ff}
