@@ -1,1 +1,136 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vrijdag 28 aug – Canterbury</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
 
+<header style="padding:10px 16px">
+  <a href="../index.html">🏠 Home</a>
+  <h2 style="margin:6px 0">🚴 Vrijdag 28 aug – Canterbury</h2>
+  <div style="font-size:13px">Laatste update: vr 28 aug 2026 • 08:10</div>
+</header>
+
+<main>
+
+<section class="day">
+
+<div class="item">
+<h3>🚴 Vandaag in één oogopslag</h3>
+<ul>
+<li>Afstand: ±55 km</li>
+<li>English Heritage Pass actief</li>
+<li>Hoogtepunten: Cathedral • St Augustine's Abbey • Westgate Gardens</li>
+</ul>
+</div>
+
+<div class="item">
+<h3>🕣 Tijdlijn</h3>
+<table>
+<tr><td>08:30</td><td>Vertrek Kingfisher Cottage</td></tr>
+<tr><td>10:15</td><td>Whitefriars fietsparking</td></tr>
+<tr><td>10:30</td><td>Canterbury Cathedral</td></tr>
+<tr><td>12:30</td><td>Lunch</td></tr>
+<tr><td>13:30</td><td>Mercery Lane & Buttermarket</td></tr>
+<tr><td>14:15</td><td>Westgate Gardens</td></tr>
+<tr><td>15:00</td><td>St Augustine's Abbey</td></tr>
+<tr><td>17:00</td><td>Terugrit</td></tr>
+</table>
+</div>
+
+<div class="item">
+<h3>🚲 Start</h3>
+<p><b>Kingfisher Cottage</b></p>
+<p><a href="https://maps.google.com/?q=Cullings+Farm+Boyke+Lane+Ottinge+CT4+6XL">📍 Navigeer</a></p>
+</div>
+
+<div class="item">
+<h3>🚲 Fietsparking</h3>
+<p><b>Whitefriars Shopping Centre</b></p>
+<p>Dicht bij de oude stad en de Cathedral.</p>
+<p><a href="https://maps.google.com/?q=Whitefriars+Canterbury">📍 Navigeer</a></p>
+</div>
+
+<div class="item">
+<h3>⛪ Canterbury Cathedral (UNESCO)</h3>
+<p><a href="https://maps.google.com/?q=Canterbury+Cathedral">📍 Navigeer</a></p>
+<p><a href="https://www.canterbury-cathedral.org/">🌐 Officiële website</a></p>
+
+<h4>Niet missen (volgorde)</h4>
+<ol>
+<li>Bell Harry Tower</li>
+<li>Martyrdom (Thomas Becket)</li>
+<li>Crypt</li>
+<li>Trinity Chapel</li>
+<li>Cloisters</li>
+</ol>
+
+<p><b>⏰ Open:</b> 10:00–17:00 (laatste toegang 16:00).</p>
+</div>
+
+<div class="item">
+<h3>🛍️ Mercery Lane</h3>
+<p>Het mooiste straatje van Canterbury.</p>
+<p><a href="https://maps.google.com/?q=Mercery+Lane+Canterbury">📍 Navigeer</a></p>
+</div>
+
+<div class="item">
+<h3>☕ Buttermarket</h3>
+<p>Leuk plein met zicht op de Cathedral.</p>
+<p><a href="https://maps.google.com/?q=Buttermarket+Canterbury">📍 Navigeer</a></p>
+</div>
+
+<div class="item">
+<h3>🏫 King's School</h3>
+<p>Een van de oudste scholen ter wereld.</p>
+<p><a href="https://maps.google.com/?q=King's+School+Canterbury">📍 Navigeer</a></p>
+</div>
+
+<div class="item">
+<h3>🌳 Westgate Gardens</h3>
+<p>Rustigste plek van de stad.</p>
+<p>Beste foto: brug richting Westgate Tower.</p>
+<p><a href="https://maps.google.com/?q=Westgate+Gardens+Canterbury">📍 Navigeer</a></p>
+</div>
+
+<div class="item">
+<h3>🍔 Lunch</h3>
+<p><b>The Foundry Brew Pub</b></p>
+<p>Lokale burgers en bier.</p>
+<p><a href="https://maps.google.com/?q=The+Foundry+Brew+Pub+Canterbury">📍 Navigeer</a></p>
+</div>
+
+<div class="item">
+<h3>🏛️ St Augustine's Abbey (EH)</h3>
+<p><a href="https://maps.google.com/?q=St+Augustine's+Abbey+Canterbury">📍 Navigeer</a></p>
+<p><a href="https://www.english-heritage.org.uk/visit/places/st-augustines-abbey/">🌐 English Heritage</a></p>
+
+<h4>Volgorde</h4>
+<ol>
+<li>Museum</li>
+<li>Grote ruïne</li>
+<li>VR-ervaring</li>
+<li>Koningsgraven</li>
+</ol>
+
+<p>Rekentijd: 45–60 minuten.</p>
+</div>
+
+<div class="item">
+<h3>⭐ Niet missen vandaag</h3>
+<ul>
+<li>Bell Harry Tower</li>
+<li>Mercery Lane</li>
+<li>Westgate Gardens</li>
+<li>St Augustine's Abbey</li>
+</ul>
+</div>
+
+</section>
+
+</main>
+</body>
+</html>
